@@ -817,7 +817,7 @@ export default function App() {
     const tick = () => {
       if (i < ADDR.length) {
         setAddrLines(p => [...p, ADDR[i++]])
-        setTimeout(tick, 170)
+        setTimeout(tick, 380)
       } else {
         setTimeout(() => setPhase('manual'), 1000)
       }
@@ -1124,8 +1124,8 @@ export default function App() {
 
   if (phase === 'address') {
     return (
-      <div className="overlay" style={{ alignItems: 'flex-start', padding: '80px' }}>
-        <div className="address-wrap">
+      <div className="overlay" style={{ alignItems: 'center', justifyContent: 'center', padding: '60px 80px' }}>
+        <div className="address-wrap" style={{ textAlign: 'center', fontSize: 16, lineHeight: 2.1, color: '#ddd' }}>
           {addrLines.map((l, i) =>
             l === '' ? <br key={i} /> : <div key={i}>{l}</div>
           )}
