@@ -21,7 +21,7 @@ const GLOBAL_CSS = `
     background: var(--bg);
     color: var(--green);
     font-family: var(--font);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.5;
     overflow: hidden;
   }
@@ -70,7 +70,7 @@ const GLOBAL_CSS = `
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 14px;
+    padding: 8px 18px;
     border-bottom: 1px solid var(--border);
     background: #060606;
     flex-shrink: 0;
@@ -78,13 +78,13 @@ const GLOBAL_CSS = `
   }
 
   .top-bar-title {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.15em;
   }
 
   .top-bar-operator {
-    font-size: 10px;
+    font-size: 13px;
     color: var(--green-dim);
     text-align: center;
     letter-spacing: 0.06em;
@@ -93,21 +93,21 @@ const GLOBAL_CSS = `
   .top-bar-right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
 
   .shift-timer {
-    font-size: 10px;
+    font-size: 13px;
     color: var(--amber);
     letter-spacing: 0.08em;
   }
 
-  .region-indicators { display: flex; gap: 5px; }
+  .region-indicators { display: flex; gap: 6px; }
 
   .region-box {
     border: 1px solid currentColor;
-    padding: 2px 5px;
-    font-size: 8px;
+    padding: 3px 7px;
+    font-size: 11px;
     letter-spacing: 0.06em;
     line-height: 1.4;
     text-align: center;
@@ -137,8 +137,8 @@ const GLOBAL_CSS = `
   .panel:last-child { border-right: none; }
 
   .panel-header {
-    padding: 5px 10px;
-    font-size: 9px;
+    padding: 7px 12px;
+    font-size: 12px;
     letter-spacing: 0.12em;
     color: var(--green-dim);
     border-bottom: 1px solid var(--border);
@@ -147,12 +147,12 @@ const GLOBAL_CSS = `
     text-transform: uppercase;
   }
 
-  .panel-left { width: 210px; flex-shrink: 0; }
+  .panel-left { width: 280px; flex-shrink: 0; }
 
   .queue-scroll { overflow-y: auto; flex: 1; }
 
   .queue-item {
-    padding: 7px 10px;
+    padding: 10px 14px;
     border-bottom: 1px solid var(--border);
     cursor: pointer;
     position: relative;
@@ -160,18 +160,18 @@ const GLOBAL_CSS = `
   }
 
   .queue-item:hover { background: #0f180f; }
-  .queue-item.active { background: #0c160c; border-left: 2px solid var(--green-dim); }
+  .queue-item.active { background: #0c160c; border-left: 3px solid var(--green-dim); }
   .queue-item.done { opacity: 0.35; cursor: default; }
 
-  .qi-num { font-size: 8px; color: var(--text-dim); letter-spacing: 0.06em; }
-  .qi-origin { font-size: 10px; color: var(--green); margin-top: 1px; }
-  .qi-subject { font-size: 9px; color: var(--green-dim); margin-top: 1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 170px; }
-  .qi-time { font-size: 8px; color: var(--text-dim); margin-top: 2px; }
+  .qi-num { font-size: 11px; color: var(--text-dim); letter-spacing: 0.06em; }
+  .qi-origin { font-size: 13px; color: var(--green); margin-top: 2px; }
+  .qi-subject { font-size: 12px; color: var(--green-dim); margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 230px; }
+  .qi-time { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
 
   .unread-dot {
     position: absolute;
-    top: 9px; right: 8px;
-    width: 4px; height: 4px;
+    top: 12px; right: 10px;
+    width: 6px; height: 6px;
     background: var(--amber);
     border-radius: 50%;
     animation: blink 1.4s infinite;
@@ -179,39 +179,39 @@ const GLOBAL_CSS = `
 
   .panel-center { flex: 1; min-width: 0; }
 
-  .tx-scroll { overflow-y: auto; flex: 1; padding: 14px; display: flex; flex-direction: column; }
+  .tx-scroll { overflow-y: auto; flex: 1; padding: 22px 24px; display: flex; flex-direction: column; }
 
   .tx-meta {
-    font-size: 9px;
+    font-size: 13px;
     color: var(--green-dim);
     border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
-    margin-bottom: 12px;
-    line-height: 1.8;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    line-height: 1.9;
     letter-spacing: 0.04em;
   }
 
   .tx-body {
-    font-size: 12px;
+    font-size: 16px;
     color: var(--green);
-    line-height: 1.75;
+    line-height: 1.85;
     white-space: pre-wrap;
     flex: 1;
   }
 
   .action-area {
-    margin-top: 20px;
-    padding-top: 10px;
+    margin-top: 28px;
+    padding-top: 16px;
     border-top: 1px solid var(--border);
     flex-shrink: 0;
   }
 
-  .action-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+  .action-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
 
   .btn {
-    padding: 6px 14px;
+    padding: 10px 22px;
     font-family: var(--font);
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     background: transparent;
@@ -232,50 +232,48 @@ const GLOBAL_CSS = `
   .btn-intercept:not(:disabled):hover { background: var(--amber); color: var(--bg); }
   .btn-intercept:disabled { border-color: var(--text-dim); color: var(--text-dim); }
 
-  .read-status { font-size: 9px; color: var(--text-dim); margin-top: 6px; letter-spacing: 0.06em; }
-  .intercept-countdown { font-size: 10px; color: var(--amber); margin-top: 6px; letter-spacing: 0.06em; }
+  .read-status { font-size: 12px; color: var(--text-dim); margin-top: 10px; letter-spacing: 0.06em; }
+  .intercept-countdown { font-size: 13px; color: var(--amber); margin-top: 10px; letter-spacing: 0.06em; }
 
   .sys-response {
-    margin-top: 10px;
-    padding: 7px 10px;
+    margin-top: 14px;
+    padding: 10px 14px;
     border: 1px solid var(--border);
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.04em;
     background: #060606;
   }
 
-  .done-stamp { font-size: 9px; color: var(--text-dim); margin-top: 12px; letter-spacing: 0.08em; }
+  .done-stamp { font-size: 12px; color: var(--text-dim); margin-top: 16px; letter-spacing: 0.08em; }
 
-  .training-tag { font-size: 8px; color: var(--amber); letter-spacing: 0.12em; margin-bottom: 6px; }
+  .training-tag { font-size: 11px; color: var(--amber); letter-spacing: 0.12em; margin-bottom: 10px; }
 
-  .progress-wrap {
-    margin-top: 14px;
-  }
+  .progress-wrap { margin-top: 18px; }
 
   .progress-bar {
     width: 100%;
     border: 1px solid var(--amber);
     padding: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   .progress-fill {
-    height: 6px;
+    height: 8px;
     background: var(--amber);
     transition: width 0.15s;
   }
 
-  .progress-label { font-size: 9px; color: var(--amber); letter-spacing: 0.08em; }
+  .progress-label { font-size: 12px; color: var(--amber); letter-spacing: 0.08em; }
 
-  .empty-center { padding: 24px 14px; font-size: 10px; color: var(--text-dim); line-height: 1.8; }
+  .empty-center { padding: 32px 24px; font-size: 14px; color: var(--text-dim); line-height: 1.9; }
 
-  .panel-right { width: 255px; flex-shrink: 0; overflow-y: auto; }
+  .panel-right { width: 340px; flex-shrink: 0; overflow-y: auto; }
 
   .collapsible { border-bottom: 1px solid var(--border); }
 
   .coll-header {
-    padding: 7px 10px;
-    font-size: 9px;
+    padding: 10px 14px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     color: var(--green-dim);
     cursor: pointer;
@@ -290,21 +288,21 @@ const GLOBAL_CSS = `
   .coll-header:hover { color: var(--green); }
 
   .coll-body {
-    padding: 10px;
-    font-size: 10px;
-    line-height: 1.7;
+    padding: 14px;
+    font-size: 13px;
+    line-height: 1.75;
     color: var(--green-dim);
     border-top: 1px solid var(--border);
   }
 
   .manual-sec {
     border: 1px solid var(--border);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 
   .manual-sec-head {
-    padding: 5px 8px;
-    font-size: 9px;
+    padding: 7px 10px;
+    font-size: 12px;
     letter-spacing: 0.08em;
     cursor: pointer;
     display: flex;
@@ -317,57 +315,34 @@ const GLOBAL_CSS = `
   .manual-sec-head:hover { color: var(--green); }
 
   .manual-sec-body {
-    padding: 8px;
-    font-size: 9px;
-    line-height: 1.7;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.75;
     border-top: 1px solid var(--border);
     white-space: pre-wrap;
   }
 
-  .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 5px; }
-
-  .map-cell {
-    border: 1px solid var(--border);
-    padding: 5px 6px;
-  }
-
-  .map-cell-label { font-size: 8px; color: var(--text-dim); letter-spacing: 0.08em; text-transform: uppercase; }
-  .map-cell-status { font-size: 9px; margin-top: 2px; }
-
   .notice-item {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
     border-bottom: 1px solid var(--border);
-    font-size: 9px;
-    line-height: 1.65;
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .notice-item:last-child { border-bottom: none; margin-bottom: 0; }
-  .notice-label { font-size: 8px; color: var(--amber); letter-spacing: 0.08em; margin-bottom: 3px; text-transform: uppercase; }
+  .notice-label { font-size: 11px; color: var(--amber); letter-spacing: 0.08em; margin-bottom: 5px; text-transform: uppercase; }
   .notice-item.new { animation: notice-flash 2.5s ease-out forwards; }
 
-  .arch-item {
-    margin-bottom: 7px;
-    padding-bottom: 7px;
-    border-bottom: 1px solid var(--border);
-    font-size: 9px;
-    color: var(--text-dim);
-  }
-
-  .arch-item:last-child { border-bottom: none; }
-  .arch-verdict { font-size: 8px; margin-top: 2px; letter-spacing: 0.06em; }
-  .vp { color: var(--green-dim); }
-  .vc { color: var(--red); opacity: 0.6; }
-
   .thought-bar {
-    padding: 4px 14px;
-    font-size: 9px;
+    padding: 7px 18px;
+    font-size: 13px;
     color: var(--text-dim);
     border-top: 1px solid var(--border);
     background: #060606;
     flex-shrink: 0;
     font-style: italic;
-    min-height: 22px;
+    min-height: 30px;
     letter-spacing: 0.03em;
   }
 
@@ -388,30 +363,30 @@ const GLOBAL_CSS = `
 
   .boot-line {
     color: var(--green);
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.08em;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
 
   .cursor-block {
     display: inline-block;
-    width: 8px;
-    height: 13px;
+    width: 10px;
+    height: 18px;
     background: var(--green);
     animation: blink 0.8s infinite;
     vertical-align: middle;
     margin-left: 2px;
   }
 
-  .login-wrap { max-width: 380px; width: 100%; }
+  .login-wrap { max-width: 460px; width: 100%; }
 
   .login-label {
-    font-size: 10px;
+    font-size: 13px;
     color: var(--green-dim);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   .login-input {
@@ -419,46 +394,46 @@ const GLOBAL_CSS = `
     border: 1px solid var(--green-dim);
     color: var(--green);
     font-family: var(--font);
-    font-size: 13px;
-    padding: 6px 10px;
+    font-size: 17px;
+    padding: 9px 14px;
     width: 100%;
     outline: none;
     letter-spacing: 0.06em;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .login-input:focus { border-color: var(--green); }
 
-  .login-id { font-size: 9px; color: var(--text-dim); letter-spacing: 0.08em; margin-bottom: 14px; }
+  .login-id { font-size: 12px; color: var(--text-dim); letter-spacing: 0.08em; margin-bottom: 18px; }
 
   .btn-auth {
     background: transparent;
     border: 1px solid var(--green);
     color: var(--green);
     font-family: var(--font);
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.1em;
-    padding: 6px 18px;
+    padding: 9px 24px;
     cursor: pointer;
     text-transform: uppercase;
   }
 
   .btn-auth:hover { background: var(--green); color: #000; }
 
-  .address-wrap { max-width: 640px; width: 100%; font-size: 12px; line-height: 2; color: #ccc; }
+  .address-wrap { max-width: 700px; width: 100%; font-size: 16px; line-height: 2.1; color: #ccc; }
 
-  .manual-intro-wrap { max-width: 680px; width: 100%; }
+  .manual-intro-wrap { max-width: 720px; width: 100%; }
 
   .manual-intro-title {
-    font-size: 13px;
+    font-size: 17px;
     letter-spacing: 0.18em;
     color: var(--green);
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     text-align: center;
   }
 
-  .manual-intro-sub { font-size: 10px; color: var(--green-dim); text-align: center; margin-bottom: 20px; letter-spacing: 0.06em; }
+  .manual-intro-sub { font-size: 13px; color: var(--green-dim); text-align: center; margin-bottom: 24px; letter-spacing: 0.06em; }
 
   .ending {
     position: fixed;
@@ -474,9 +449,9 @@ const GLOBAL_CSS = `
     text-align: center;
   }
 
-  .ending-title { font-size: 11px; letter-spacing: 0.2em; color: var(--green-dim); text-transform: uppercase; margin-bottom: 20px; }
-  .ending-main { font-size: 13px; color: var(--green); line-height: 2; margin-bottom: 14px; letter-spacing: 0.04em; }
-  .ending-thought { font-size: 10px; color: var(--text-dim); font-style: italic; margin-top: 8px; }
+  .ending-title { font-size: 14px; letter-spacing: 0.2em; color: var(--green-dim); text-transform: uppercase; margin-bottom: 24px; }
+  .ending-main { font-size: 18px; color: var(--green); line-height: 2.1; margin-bottom: 18px; letter-spacing: 0.04em; }
+  .ending-thought { font-size: 14px; color: var(--text-dim); font-style: italic; margin-top: 10px; }
   .ending-sync { color: var(--amber); }
 `
 
@@ -1331,30 +1306,6 @@ export default function App() {
             )}
           </div>
 
-          {/* Map */}
-          <div className="collapsible">
-            <div className="coll-header" onClick={() => setPanelOpen(p => ({ ...p, map: !p.map }))}>
-              <span>Regional Status Map</span>
-              <span>{panelOpen.map ? '▲' : '▼'}</span>
-            </div>
-            {panelOpen.map && (
-              <div className="coll-body">
-                <div className="map-grid">
-                  {Object.entries(regions).map(([reg, st]) => (
-                    <div key={reg} className="map-cell">
-                      <div className="map-cell-label">{reg}</div>
-                      <div className={`map-cell-status ${REGION_CLASS[st] || 'st'}`}>{REGION_LABELS[st] || st}</div>
-                    </div>
-                  ))}
-                  <div className="map-cell">
-                    <div className="map-cell-label">STN-14</div>
-                    <div className="map-cell-status st">ACTIVE</div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-
           {/* Notices */}
           <div className="collapsible">
             <div className="coll-header" onClick={() => setPanelOpen(p => ({ ...p, notices: !p.notices }))}>
@@ -1373,29 +1324,6 @@ export default function App() {
             )}
           </div>
 
-          {/* Archive */}
-          <div className="collapsible">
-            <div className="coll-header" onClick={() => setPanelOpen(p => ({ ...p, archive: !p.archive }))}>
-              <span>Archived Transmissions</span>
-              <span>{panelOpen.archive ? '▲' : '▼'}</span>
-            </div>
-            {panelOpen.archive && (
-              <div className="coll-body">
-                {archive.length === 0
-                  ? <div style={{ fontSize: 9, color: 'var(--text-dim)' }}>No archived transmissions.</div>
-                  : archive.map((tx, i) => (
-                    <div key={`${tx.id}-${i}`} className="arch-item">
-                      <div>{tx.from.split(',')[0]}</div>
-                      <div style={{ fontSize: 8, color: 'var(--text-dim)', marginTop: 1 }}>{tx.subject}</div>
-                      <div className={`arch-verdict ${tx.action === 'pass' ? 'vp' : 'vc'}`}>
-                        {tx.action === 'pass' ? '▶ RELAYED' : '■ CONTAINED'}
-                      </div>
-                    </div>
-                  ))
-                }
-              </div>
-            )}
-          </div>
         </div>
       </div>
 
